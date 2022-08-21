@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício país</title>
+</head>
+<body>
+    <h1>Estrangeiro ou brasileiro</h1>
+    <input type="text" name="nac" id="inac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="nac">
+
+    </div>
+    <script>
+       function verificar(){ 
+        var tnac = window.document.getElementById('inac')
+        var pais = 'brasil'
+        var nac = window.document.getElementById('nac')
+        var r = String(tnac + string)
+
+        nac.innerHTML=`Vivendo em ${r}`
+
+        if(pais == 'brasil'){
+            nac.innerHTML ='Você é brasileiro!'
+        }else{
+            nac.innerHTML='Você é estrangeiro!'
+        }
+    }
+    </script>
+</body>
+</html>
